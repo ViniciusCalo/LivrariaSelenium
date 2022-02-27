@@ -1,0 +1,708 @@
+{
+  "id": "7d848716-579a-456b-9c97-a2d3489e3f95",
+  "version": "2.0",
+  "name": "Livraria",
+  "url": "http://localhost:8080/Livraria/index.jsp",
+  "tests": [{
+    "id": "91d1444a-9b91-4bf1-8aa8-c53b38ca5f20",
+    "name": "01 - Livraria inclusão válida",
+    "commands": [{
+      "id": "e0682620-6cef-434a-8997-3e949747a8c5",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Livraria/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0502470f-6d36-457a-85e8-cac776ac5692",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1330x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "719f1d63-1970-4e6b-be44-86d68063d7a4",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Sistema de Controle de Pedidos de Livros - Menu Principal",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5a393d7-65fd-4a3b-8a6c-fbc96f1b31dd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastrar",
+      "targets": [
+        ["linkText=Cadastrar", "linkText"],
+        ["css=.active > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastrar')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'livr_010.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d062b3b0-9183-4ea0-bd94-e183d2100aa3",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Sistema de Controle de Pedidos de Livros - Cadastro",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c4a21b6-6659-4f91-8516-c26d1b5b8ab2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=label",
+      "targets": [],
+      "value": "Pedido No. 50025"
+    }, {
+      "id": "7df7dd36-457d-44ca-82a8-9321e148e443",
+      "comment": "",
+      "command": "type",
+      "target": "name=isbn1",
+      "targets": [
+        ["name=isbn1", "name"],
+        ["css=tr:nth-child(3) > td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='isbn1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1234567890"
+    }, {
+      "id": "cdc1a749-0106-4c50-a6e5-ad531c09eebd",
+      "comment": "",
+      "command": "type",
+      "target": "name=qtd1",
+      "targets": [
+        ["name=qtd1", "name"],
+        ["css=tr:nth-child(3) > td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='qtd1']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "bb39daf5-30f8-43d3-8f57-06ab75348ba5",
+      "comment": "",
+      "command": "type",
+      "target": "name=prc1",
+      "targets": [
+        ["name=prc1", "name"],
+        ["css=tr:nth-child(3) > td:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='prc1']", "xpath:attributes"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": "35.00"
+    }, {
+      "id": "791fcda1-ce51-4b75-a03b-6b77374c20ab",
+      "comment": "",
+      "command": "type",
+      "target": "name=isbn2",
+      "targets": [
+        ["name=isbn2", "name"],
+        ["css=tr:nth-child(4) > td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='isbn2']", "xpath:attributes"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": "2345678901"
+    }, {
+      "id": "4713d75b-4a9b-4ed6-aa19-e327f6a0ed02",
+      "comment": "",
+      "command": "type",
+      "target": "name=qtd2",
+      "targets": [
+        ["name=qtd2", "name"],
+        ["css=tr:nth-child(4) > td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='qtd2']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "0fc01818-12f8-4a80-b201-c3217558e24b",
+      "comment": "",
+      "command": "type",
+      "target": "name=prc2",
+      "targets": [
+        ["name=prc2", "name"],
+        ["css=tr:nth-child(4) > td:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='prc2']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[3]/input", "xpath:position"]
+      ],
+      "value": "40.00"
+    }, {
+      "id": "24f48e87-bc3d-441c-a038-66b2ad701319",
+      "comment": "",
+      "command": "type",
+      "target": "name=isbn3",
+      "targets": [
+        ["name=isbn3", "name"],
+        ["css=tr:nth-child(5) > td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='isbn3']", "xpath:attributes"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": "3456789012"
+    }, {
+      "id": "58f892b3-c896-4545-93f4-b7416a7677c9",
+      "comment": "",
+      "command": "type",
+      "target": "name=qtd3",
+      "targets": [
+        ["name=qtd3", "name"],
+        ["css=tr:nth-child(5) > td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='qtd3']", "xpath:attributes"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "ad2b3818-8198-4ca3-9c0d-e543c0990d65",
+      "comment": "",
+      "command": "type",
+      "target": "name=prc3",
+      "targets": [
+        ["name=prc3", "name"],
+        ["css=tr:nth-child(5) > td:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='prc3']", "xpath:attributes"],
+        ["xpath=//tr[5]/td[3]/input", "xpath:position"]
+      ],
+      "value": "55.00"
+    }, {
+      "id": "9ed804c2-d860-471c-962d-c096188917df",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3079ce9e-b5fc-469d-b053-f3308585c4be",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub_totped",
+      "targets": [
+        ["name=sub_totped", "name"],
+        ["css=th > input", "css:finder"],
+        ["xpath=//input[@name='sub_totped']", "xpath:attributes"],
+        ["xpath=//th/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9fa7780-7f6d-4f40-85bd-f84d9fd0bedf",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae714349-096a-4ecc-9996-1b636cd015c9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(1) > th",
+      "targets": [],
+      "value": "Pedido No. 50025"
+    }, {
+      "id": "1eedbb0e-c587-4458-bb0a-614310db48c8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(3) > td:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(3) > td:nth-child(1)", "css:finder"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": "1234567890"
+    }, {
+      "id": "0e8ce489-6326-4ccc-a793-7d459d30e6ac",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(3) > td:nth-child(2)",
+      "targets": [],
+      "value": "2"
+    }, {
+      "id": "3f255cc0-20e6-41da-a224-29b7d9ad8035",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(3) > td:nth-child(3)",
+      "targets": [],
+      "value": "35,00"
+    }, {
+      "id": "9be998c4-34e2-4312-8b51-e67c0b8c9bdd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(3) > td:nth-child(4)",
+      "targets": [
+        ["css=tr:nth-child(3) > td:nth-child(4)", "css:finder"],
+        ["xpath=//td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'6,00')]", "xpath:innerText"]
+      ],
+      "value": "70,00"
+    }, {
+      "id": "ac2049ee-b16a-4f9b-9d80-a23cf7c72bbe",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(1)", "css:finder"],
+        ["xpath=//tr[4]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'4')]", "xpath:innerText"]
+      ],
+      "value": "2345678901"
+    }, {
+      "id": "1afec0d3-6812-4707-aff2-6343890a0723",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(1)", "css:finder"],
+        ["xpath=//tr[4]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'4')]", "xpath:innerText"]
+      ],
+      "value": "3"
+    }, {
+      "id": "44512304-7915-4957-a451-69d3e330754e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(3)", "css:finder"],
+        ["xpath=//tr[4]/td[3]", "xpath:position"]
+      ],
+      "value": "40,00"
+    }, {
+      "id": "932d4a3e-488d-41b2-9982-7cab15982c29",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(4)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(4)", "css:finder"],
+        ["xpath=//tr[4]/td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'30,00')]", "xpath:innerText"]
+      ],
+      "value": "120,00"
+    }, {
+      "id": "9eace866-d00e-48df-b3f8-79c1c1dd4403",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(5) > td:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(5) > td:nth-child(1)", "css:finder"],
+        ["xpath=//tr[5]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'7')]", "xpath:innerText"]
+      ],
+      "value": "3456789012"
+    }, {
+      "id": "89017642-d88a-4340-a43d-227350d3a18c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(5) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(5) > td:nth-child(3)", "css:finder"],
+        ["xpath=//tr[5]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'9,00')]", "xpath:innerText"]
+      ],
+      "value": "1"
+    }, {
+      "id": "2539c893-d9db-45f1-8ddf-dace64485746",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(5) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(5) > td:nth-child(3)", "css:finder"],
+        ["xpath=//tr[5]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'9,00')]", "xpath:innerText"]
+      ],
+      "value": "55,00"
+    }, {
+      "id": "3546bbb2-b60c-43a0-bb2a-28c158fe2e8f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(5) > td:nth-child(4)",
+      "targets": [
+        ["css=tr:nth-child(5) > td:nth-child(4)", "css:finder"],
+        ["xpath=//tr[5]/td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'72,00')]", "xpath:innerText"]
+      ],
+      "value": "55,00"
+    }, {
+      "id": "0bb13ae9-c6e7-48e8-884a-b59c7677c2cc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(6) > th:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(6) > th:nth-child(2)", "css:finder"],
+        ["xpath=//tr[6]/th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'245,00')]", "xpath:innerText"]
+      ],
+      "value": "245,00"
+    }, {
+      "id": "db1dc5b7-250c-442b-bc71-a0903304da61",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub_confirma",
+      "targets": [
+        ["name=sub_confirma", "name"],
+        ["css=th:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='sub_confirma']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "826546f4-a699-44f9-8303-e90ae474a266",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Sistema de Controle de Pedidos de Livros - Gravação",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a0d4996-3fb1-480b-b774-1af81f525b79",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(3)",
+      "targets": [],
+      "value": "Pedido 50025 gravado com sucesso"
+    }, {
+      "id": "aa987940-d165-46d4-9450-3c85e705bf7e",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub_volta_menu",
+      "targets": [
+        ["name=sub_volta_menu", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='sub_volta_menu']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a813a0f6-b89c-4975-93e9-182c92c49203",
+    "name": "02 - Livraria inclusão inválida",
+    "commands": [{
+      "id": "dfbd3a2e-60c9-43cd-850e-73aece6706fb",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Livraria/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4639874e-2291-4a6a-b217-b1e2eda7f398",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1330x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5a55a07-5b10-4bad-a3ed-b7b741df5291",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Sistema de Controle de Pedidos de Livros - Menu Principal",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87bd7178-b312-466c-bb2c-998e70b25517",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastrar",
+      "targets": [
+        ["linkText=Cadastrar", "linkText"],
+        ["css=.active > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastrar')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'livr_010.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47d11bf9-75b6-4a71-937c-851efc83ae94",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Sistema de Controle de Pedidos de Livros - Cadastro",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79125e60-4b1e-4485-924f-4186775820ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) > td",
+      "targets": [
+        ["css=tr:nth-child(1) > td", "css:finder"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Pedido No. 50025')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19243d34-903e-4957-8845-1042ca5df4c2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(1) > td",
+      "targets": [
+        ["css=tr:nth-child(1) > td", "css:finder"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Pedido No. 50025')]", "xpath:innerText"]
+      ],
+      "value": "Pedido No. 50025"
+    }, {
+      "id": "6500971c-e6ae-43e7-9140-7aa83814c480",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub_totped",
+      "targets": [
+        ["name=sub_totped", "name"],
+        ["css=th > input", "css:finder"],
+        ["xpath=//input[@name='sub_totped']", "xpath:attributes"],
+        ["xpath=//th/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f606e3e-dae2-41ee-9519-70897090119a",
+      "comment": "",
+      "command": "type",
+      "target": "name=isbn1",
+      "targets": [
+        ["name=isbn1", "name"],
+        ["css=tr:nth-child(3) > td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='isbn1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1234567890"
+    }, {
+      "id": "39fe9127-f288-4fe0-a4a4-4f7c8dd50cbd",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub_totped",
+      "targets": [
+        ["name=sub_totped", "name"],
+        ["css=th > input", "css:finder"],
+        ["xpath=//input[@name='sub_totped']", "xpath:attributes"],
+        ["xpath=//th/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "472ed51c-df92-4ff0-b635-1f75ba6b9037",
+      "comment": "",
+      "command": "type",
+      "target": "name=qtd1",
+      "targets": [
+        ["name=qtd1", "name"],
+        ["css=tr:nth-child(3) > td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='qtd1']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "d68581e5-8001-4901-a5fd-0078d2d10dea",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub_totped",
+      "targets": [
+        ["name=sub_totped", "name"],
+        ["css=th > input", "css:finder"],
+        ["xpath=//input[@name='sub_totped']", "xpath:attributes"],
+        ["xpath=//th/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e176b31-f399-4612-8691-6477b17a0094",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "688bfaec-aac7-4cb0-90e0-429ca4798278",
+    "name": "03- Livraria fechamento válido",
+    "commands": [{
+      "id": "1caa25ba-4377-4bc5-98eb-ebbf46a33090",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Livraria/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13816666-23d5-49da-a55d-a15daeff6bd8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1330x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0f6c58a-79a2-48fc-8623-54c3f579bb7f",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Sistema de Controle de Pedidos de Livros - Menu Principal",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "271d3c3f-c866-4cc1-b851-09e4e1bcd875",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fechar",
+      "targets": [
+        ["linkText=Fechar", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Fechar')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'livr_020.jsp')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Fechar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "557d0760-a7a4-4679-8baf-f6f92e23b956",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e12c95f-5344-41cd-ac65-be8ddbba1ce5",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Sistema de Controle de Pedidos de Livros - Fechamento",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "050a767d-f745-4582-88ed-1e36ebb6e28e",
+      "comment": "",
+      "command": "click",
+      "target": "name=selnped",
+      "targets": [
+        ["name=selnped", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='selnped']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'--- Selecione Pedido ---\n50022\n50023\n50024\n50025')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cf6f72e-3d49-49cf-aa26-1cd37829d2d0",
+      "comment": "",
+      "command": "select",
+      "target": "name=selnped",
+      "targets": [],
+      "value": "label=50023"
+    }, {
+      "id": "c7716179-5e81-488d-8418-c56909c9a8ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(3)",
+      "targets": [
+        ["css=option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='50023']", "xpath:attributes"],
+        ["xpath=//option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'50023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e392f494-1f30-4c40-aefa-30b851d4bec7",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub_fecha_pedido",
+      "targets": [
+        ["name=sub_fecha_pedido", "name"],
+        ["css=td > input", "css:finder"],
+        ["xpath=//input[@name='sub_fecha_pedido']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b74649d-5431-4ef9-b405-9659de3456b8",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(3)",
+      "targets": [
+        ["css=div:nth-child(3)", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"],
+        ["xpath=//div[contains(.,'Pedido número 50023 fechado')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b3f25f9-8c33-421b-a262-ba7eff3f438f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "Sistema de Controle de Pedidos de Livros - Confirmação de Fechamento\\n\\nPedido número 50023 fechado"
+    }, {
+      "id": "6e206981-b457-4d9a-b353-eb6b4657fed4",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub_volta_menu",
+      "targets": [
+        ["name=sub_volta_menu", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='sub_volta_menu']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e5e73ac6-7fae-4595-a143-62d635b8027f",
+    "name": "04 - Livraria fechamento inválido",
+    "commands": [{
+      "id": "8886217c-dcc4-41cb-bdde-4a24004b31c1",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Livraria/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20f05b14-459a-4966-8a3c-f204405c22bc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1330x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "641a5836-0434-45bc-8ef7-483e979537e3",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Sistema de Controle de Pedidos de Livros - Menu Principal",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "763ff4ca-456b-40d4-8c70-11068eec9e71",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fechar",
+      "targets": [
+        ["linkText=Fechar", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Fechar')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'livr_020.jsp')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Fechar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8895cd9b-86ce-42ea-a342-8c31469bebac",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub_fecha_pedido",
+      "targets": [
+        ["name=sub_fecha_pedido", "name"],
+        ["css=td > input", "css:finder"],
+        ["xpath=//input[@name='sub_fecha_pedido']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "49d6f38f-d17d-4ac2-a1ee-e239ff496faa",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/Livraria/index.jsp"],
+  "plugins": []
+}
